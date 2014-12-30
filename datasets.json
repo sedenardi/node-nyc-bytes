@@ -1,0 +1,32 @@
+{
+	"pluto": {
+		"name": "PLUTO",
+		"version": "14v1",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_pluto_14v1.zip",
+		"accessedOn": "2014-12-30"
+	},
+	"mapPluto": {
+		"name": "MapPLUTO",
+		"version": "14v1",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/mappluto_14v1.zip",
+		"accessedOn": "2014-12-30"
+	},
+	"zoningTaxLot": {
+		"name": "NYC Zoning Tax Lot Database",
+		"version": "December 2014",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_zoningtaxLotdb_201412.zip",
+		"accessedOn": "2014-12-30"
+	},
+	"pad": {
+		"name": "PAD (Property Address Directory)",
+		"version": "14D",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/pad14d.zip",
+		"accessedOn": "2014-12-30"
+	},
+	"snd": {
+		"name": "SND (Street Name Dictionary)",
+		"version": "14D",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/snd14d.zip",
+		"accessedOn": "2014-12-30"
+	}
+}
