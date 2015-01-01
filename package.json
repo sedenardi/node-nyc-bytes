@@ -1,0 +1,25 @@
+{
+  "name": "node-nyc-bytes",
+  "version": "0.1.0",
+  "description": "A node.js module for downloading and parsing NYC's BYTES of the BIG APPLE data sets.",
+  "main": "lib/bytes.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sedenardi/node-nyc-bytes.git"
+  },
+  "homepage": "https://github.com/sedenardi/node-nyc-bytes",
+  "keywords": [
+    "nyc",
+    "bytes",
+    "pluto"
+  ],
+  "author": "Sanders DeNardi <sedenardi@gmail.com> (http://www.sandersdenardi.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sedenardi/node-nyc-bytes/issues"
+  },
+  "dependencies": {
+    "decompress-zip": "^0.0.8",
+    "mkdirp": "^0.5.0"
+  }
+}
