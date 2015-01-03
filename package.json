@@ -1,5 +1,5 @@
 {
-  "name": "node-nyc-bytes",
+  "name": "nyc-bytes",
   "version": "0.1.0",
   "description": "A node.js module for downloading and parsing NYC's BYTES of the BIG APPLE data sets.",
   "main": "lib/bytes.js",
