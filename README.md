@@ -8,4 +8,3 @@ A node.js module for downloading and parsing NYC's [BYTES of the BIG APPLE data 
 * MapPluto
 * NYC Zoning Tax Lot Database
 * PAD (Property Address Directory)
-* SND (Street Name Dictionary)

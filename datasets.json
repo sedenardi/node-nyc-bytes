@@ -26,12 +26,5 @@
 		"version": "14D",
 		"url": "http://www.nyc.gov/html/dcp/download/bytes/pad14d.zip",
 		"accessedOn": "2014-12-30"
-	},
-	"SND": {
-		"name": "SND (Street Name Dictionary)",
-		"tag": "snd",
-		"version": "14D",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/snd14d.zip",
-		"accessedOn": "2014-12-30"
 	}
 }
