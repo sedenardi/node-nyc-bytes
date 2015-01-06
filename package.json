@@ -1,7 +1,7 @@
 {
   "name": "nyc-bytes",
   "version": "0.1.0",
-  "description": "A node.js module for downloading and parsing NYC's BYTES of the BIG APPLE data sets.",
+  "description": "A node.js module for working with NYC's BYTES of the BIG APPLE datasets.",
   "main": "lib/bytes.js",
   "repository": {
     "type": "git",
