@@ -78,6 +78,5 @@ becomes
 ```
 
 #Todo
-* Use better stream concatenation (high memory usage when using all boroughs in Pluto and MapPLUTO datasets)
 * Tests
 * Add datasets
