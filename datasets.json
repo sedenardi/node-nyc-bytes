@@ -4,6 +4,7 @@
 		"tag": "pluto",
 		"version": "14v2",
 		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_pluto_14v2.zip",
+		"hash": "e401dbcf1094cfb3e24fb0714fce2073da979e9c",
 		"accessedOn": "2014-02-17"
 	},
 	"MapPluto": {
@@ -11,20 +12,35 @@
 		"tag": "mapPluto",
 		"version": "14v2",
 		"url": "http://www.nyc.gov/html/dcp/download/bytes/mappluto_14v2.zip",
-		"accessedOn": "2014-02-17"
+		"hash": "0018052d5dad00d79e3e5c52c963c4cfee250f0a",
+		"accessedOn": "2014-02-17",
+		"files": {
+	    "MN": "Manhattan/MNMapPLUTO.shp",
+	    "BX": "Bronx/BXMapPLUTO.shp",
+	    "BK": "Brooklyn/BKMapPLUTO.shp",
+	    "QN": "Queens/QNMapPLUTO.shp",
+	    "SI": "Staten_Island/SIMapPLUTO.shp"
+	  }
 	},
 	"ZoningTaxLot": {
 		"name": "NYC Zoning Tax Lot Database",
 		"tag": "zoningTaxLot",
 		"version": "January 2015",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_zoningtaxLotdb_201501.zip",
-		"accessedOn": "2014-02-17"
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_zoningtaxlotdb_201501.zip",
+		"hash": "b5b41c434941bc8670732f1315090a48bf8be1d9",
+		"accessedOn": "2014-02-17",
+		"file": "NYC_ZoningTaxLotDB_201501.csv"
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
 		"tag": "pad",
 		"version": "14D",
 		"url": "http://www.nyc.gov/html/dcp/download/bytes/pad14d.zip",
-		"accessedOn": "2014-02-17"
+		"hash": "f0fc72a587b6eedaf0bca8882216c1648f056186",
+		"accessedOn": "2014-02-17",
+		"files": {
+	    "BBL": "bobabbl.txt",
+	    "ADR": "bobaadr.txt"
+	  }
 	}
 }
