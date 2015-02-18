@@ -2,29 +2,29 @@
 	"Pluto": {
 		"name": "PLUTO",
 		"tag": "pluto",
-		"version": "14v1",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_pluto_14v1.zip",
-		"accessedOn": "2014-12-30"
+		"version": "14v2",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_pluto_14v2.zip",
+		"accessedOn": "2014-02-17"
 	},
 	"MapPluto": {
 		"name": "MapPLUTO",
 		"tag": "mapPluto",
-		"version": "14v1",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/mappluto_14v1.zip",
-		"accessedOn": "2014-12-30"
+		"version": "14v2",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/mappluto_14v2.zip",
+		"accessedOn": "2014-02-17"
 	},
 	"ZoningTaxLot": {
 		"name": "NYC Zoning Tax Lot Database",
 		"tag": "zoningTaxLot",
-		"version": "December 2014",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_zoningtaxLotdb_201412.zip",
-		"accessedOn": "2014-12-30"
+		"version": "January 2015",
+		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_zoningtaxLotdb_201501.zip",
+		"accessedOn": "2014-02-17"
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
 		"tag": "pad",
 		"version": "14D",
 		"url": "http://www.nyc.gov/html/dcp/download/bytes/pad14d.zip",
-		"accessedOn": "2014-12-30"
+		"accessedOn": "2014-02-17"
 	}
 }

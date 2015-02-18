@@ -3,7 +3,8 @@ node-nyc-bytes
 
 A node.js module for working with NYC's [BYTES of the BIG APPLE datasets](http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml). 
 
-`nyc-bytes` automatically downloads, extracts, and exposes a stream of objects from any of the supported datasets.
+`nyc-bytes` automatically downloads, extracts, and exposes a stream of objects from any of the supported datasets. Most datasets return object representations of the records. MapPluto returns GeoJSON `Polygons` converted from New York- Long Island State Plane
+Coordinate System (NAD83) to standard Latitude/Longitude (WGS84) for easy mapping use.
 
 ### Currently Supported Datasets
 * PLUTO
@@ -30,10 +31,10 @@ Each dataset is exposed as a singleton object that must be initialized. This ens
     dataset.init();
 
 #####Datasets
-* Pluto - `var dataset = Bytes.Pluto`;
-* MapPluto - `var dataset = Bytes.MapPluto`;
-* NYC Zoning Tax Lot Database - `var dataset = Bytes.ZoningTaxLot`;
-* PAD (Property Address Directory) - `var dataset = Bytes.PAD`;
+* Pluto - `var dataset = Bytes.Pluto;`
+* MapPluto - `var dataset = Bytes.MapPluto;` (requires [ogr2ogr](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries))
+* NYC Zoning Tax Lot Database - `var dataset = Bytes.ZoningTaxLot;`
+* PAD (Property Address Directory) - `var dataset = Bytes.PAD;`
 
 ##dataset.stream([options])
 
