@@ -3,8 +3,7 @@ node-nyc-bytes
 
 A node.js module for working with NYC's [BYTES of the BIG APPLE datasets](http://www.nyc.gov/html/dcp/html/bytes/applbyte.shtml). 
 
-`nyc-bytes` automatically downloads, extracts, and exposes a stream of objects from any of the supported datasets. Most datasets return object representations of the records. MapPluto returns GeoJSON `Polygons` converted from New York- Long Island State Plane
-Coordinate System (NAD83) to standard Latitude/Longitude (WGS84) for easy mapping use.
+`nyc-bytes` automatically downloads, extracts, and exposes a stream of objects from any of the supported datasets. Most datasets return object representations of the records. MapPluto returns GeoJSON `Polygons` converted from New York - Long Island State Plane Coordinate System (NAD83) to standard Latitude/Longitude (WGS84) for easy mapping use.
 
 ### Currently Supported Datasets
 * PLUTO
@@ -78,6 +77,12 @@ becomes
 "EAST 45 STREET"
 ```
 
+#Test
+Ensure you have [`mocha`](http://mochajs.org/) installed, then run
+
+    npm test
+
+to verify the datasets.
+
 #Todo
-* Tests
-* Add datasets
+* Add datasets - open an issue to suggest a dataset you'd like to see.
