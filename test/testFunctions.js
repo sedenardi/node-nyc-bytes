@@ -63,17 +63,18 @@ module.exports.allTests = function(dataset, options, indexFunction, records, cou
         boroughTest(dataset, opt, records.SI, indexFunction, counts.SI);
       });
     });
+  } else {
+    describe('All boroughs', function() {
+      var opt = { };
+      for (var k in options)
+        opt[k] = options[k];
+      var allRecords = records.MN
+        .concat(records.BX)
+        .concat(records.BK)
+        .concat(records.QN)
+        .concat(records.SI);
+      var totalCount = counts.Total;
+      boroughTest(dataset, opt, allRecords, indexFunction, totalCount);
+    });
   }
-  describe('All boroughs', function() {
-    var opt = { };
-    for (var k in options)
-      opt[k] = options[k];
-    var allRecords = records.MN
-      .concat(records.BX)
-      .concat(records.BK)
-      .concat(records.QN)
-      .concat(records.SI);
-    var totalCount = counts.MN + counts.BX + counts.BK + counts.QN + counts.SI;
-    boroughTest(dataset, opt, allRecords, indexFunction, totalCount);
-  });
 };

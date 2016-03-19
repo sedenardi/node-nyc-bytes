@@ -19,37 +19,30 @@ var geoIndexFunction = function(record,records) {
 
 describe('Pluto', function(){
   var dataset = Bytes.Pluto;
-  var counts = { MN: 43169, BX: 89840, BK: 277563, QN: 324530, SI: 123812 };
+  var counts = { MN: 43231, BX: 89963, BK: 277748, QN: 324630, SI: 123892 };
   testFunctions.allTests(dataset, { }, objIndexFunction, records, counts);
 });
 
 describe('MapPluto', function(){
   var dataset = Bytes.MapPluto;
-  var counts = { MN: 42851, BX: 89684, BK: 277211, QN: 324229, SI: 123538 };
+  var counts = { MN: 42786, BX: 89741, BK: 277097, QN: 324242, SI: 123592 };
   testFunctions.allTests(dataset, { }, geoIndexFunction, records, counts);
 });
 
 describe('ZoningTaxLot', function(){
   var dataset = Bytes.ZoningTaxLot;
-  var counts = { MN: 43175, BX: 89811, BK: 277523, QN: 324450, SI: 123822 };
+  var counts = { MN: 43145, BX: 89842, BK: 277390, QN: 324425, SI: 124001 };
   testFunctions.allTests(dataset, { }, objIndexFunction, records, counts);
 });
 
 describe('PAD', function(){
   var dataset = Bytes.PAD;
-  var bblCounts = { MN: 46951, BX: 91688, BK: 283151, QN: 328809, SI: 129941 };
-  var adrCounts = { MN: 66296, BX: 133948, BK: 389610, QN: 506394, SI: 172321 };
+  var bblCounts = { Total: 880461 };
+  var adrCounts = { Total: 1285963 };
   describe('BBL', function(){
     testFunctions.allTests(dataset, { table: 'BBL' }, objIndexFunction, records, bblCounts, true);
   });
   describe('ADR', function(){
     testFunctions.allTests(dataset, { table: 'ADR' }, objIndexFunction, records, adrCounts, true, true);
-  });
-  describe('BOTH', function(){
-    var bothCounts = { MN: bblCounts.MN + adrCounts.MN,
-      BX: bblCounts.BX + adrCounts.BX, BK: bblCounts.BK + adrCounts.BK,
-      QN: bblCounts.QN + adrCounts.QN, SI: bblCounts.SI + adrCounts.SI
-    }
-    testFunctions.allTests(dataset, { }, objIndexFunction, records, bothCounts, true, true);
   });
 });

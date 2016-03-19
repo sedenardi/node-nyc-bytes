@@ -2,18 +2,18 @@
 	"Pluto": {
 		"name": "PLUTO",
 		"tag": "pluto",
-		"version": "14v2",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_pluto_14v2.zip",
-		"hash": "e401dbcf1094cfb3e24fb0714fce2073da979e9c",
-		"accessedOn": "2014-02-17"
+		"version": "15v1",
+		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_15v1.zip",
+		"hash": "c2793da9a8d03616a22fd4c5cf14d629245f4a3f",
+		"accessedOn": "2016-03-18"
 	},
 	"MapPluto": {
 		"name": "MapPLUTO",
 		"tag": "mapPluto",
-		"version": "14v2",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/mappluto_14v2.zip",
-		"hash": "0018052d5dad00d79e3e5c52c963c4cfee250f0a",
-		"accessedOn": "2014-02-17",
+		"version": "15v1",
+		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_15v1.zip",
+		"hash": "e9a013a2132f7419aeb8f6fde9f0fd99a43bbedc",
+		"accessedOn": "2016-03-18",
 		"files": {
 	    "MN": "Manhattan/MNMapPLUTO.shp",
 	    "BX": "Bronx/BXMapPLUTO.shp",
@@ -25,19 +25,19 @@
 	"ZoningTaxLot": {
 		"name": "NYC Zoning Tax Lot Database",
 		"tag": "zoningTaxLot",
-		"version": "January 2015",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/nyc_zoningtaxlotdb_201501.zip",
-		"hash": "b5b41c434941bc8670732f1315090a48bf8be1d9",
-		"accessedOn": "2014-02-17",
-		"file": "NYC_ZoningTaxLotDB_201501.csv"
+		"version": "February 2016",
+		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_zoningtaxlotdb_201602.zip",
+		"hash": "af7db9be76fa46ae6f4782306d65722f1cfa2e5d",
+		"accessedOn": "2016-03-18",
+		"file": "NYC_ZoningTaxLotDB_201602.csv"
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
 		"tag": "pad",
-		"version": "14D",
-		"url": "http://www.nyc.gov/html/dcp/download/bytes/pad14d.zip",
-		"hash": "f0fc72a587b6eedaf0bca8882216c1648f056186",
-		"accessedOn": "2014-02-17",
+		"version": "16A",
+		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16a.zip",
+		"hash": "415b5b1e4d41b397b3c5775f238f2a34a59af273",
+		"accessedOn": "2016-03-18",
 		"files": {
 	    "BBL": "bobabbl.txt",
 	    "ADR": "bobaadr.txt"
