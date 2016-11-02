@@ -2,18 +2,18 @@
 	"Pluto": {
 		"name": "PLUTO",
 		"tag": "pluto",
-		"version": "15v1",
-		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_15v1.zip",
-		"hash": "c2793da9a8d03616a22fd4c5cf14d629245f4a3f",
-		"accessedOn": "2016-03-18"
+		"version": "16v1",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_16v1.zip",
+		"hash": "9eead81b8ccd16b3f140ccabfb6eaf9945270340",
+		"accessedOn": "2016-11-01"
 	},
 	"MapPluto": {
 		"name": "MapPLUTO",
 		"tag": "mapPluto",
 		"version": "15v1",
-		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_15v1.zip",
-		"hash": "e9a013a2132f7419aeb8f6fde9f0fd99a43bbedc",
-		"accessedOn": "2016-03-18",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_16v1.zip",
+		"hash": "3dd051afbfb5990a23e10d3d8c377116fa4be4f1",
+		"accessedOn": "2016-11-01",
 		"files": {
 	    "MN": "Manhattan/MNMapPLUTO.shp",
 	    "BX": "Bronx/BXMapPLUTO.shp",
@@ -25,19 +25,19 @@
 	"ZoningTaxLot": {
 		"name": "NYC Zoning Tax Lot Database",
 		"tag": "zoningTaxLot",
-		"version": "February 2016",
-		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_zoningtaxlotdb_201602.zip",
-		"hash": "af7db9be76fa46ae6f4782306d65722f1cfa2e5d",
-		"accessedOn": "2016-03-18",
-		"file": "NYC_ZoningTaxLotDB_201602.csv"
+		"version": "October 2016",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201610.zip",
+		"hash": "48f9d520203c304c99b50746af444bb9b93c0e19",
+		"accessedOn": "2016-11-01",
+		"file": "NY_ZoningTaxLotDB_201610.csv"
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
 		"tag": "pad",
-		"version": "16A",
-		"url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16a.zip",
-		"hash": "415b5b1e4d41b397b3c5775f238f2a34a59af273",
-		"accessedOn": "2016-03-18",
+		"version": "16C",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16c.zip",
+		"hash": "fb3969b6a4c41aacda75c40d44c6892acae47d40",
+		"accessedOn": "2016-11-01",
 		"files": {
 	    "BBL": "bobabbl.txt",
 	    "ADR": "bobaadr.txt"
