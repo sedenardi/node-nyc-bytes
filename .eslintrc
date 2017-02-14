@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "quotes": [2, "single"],
+    "no-mixed-requires": [0],
+    "no-underscore-dangle": [0],
+    "eqeqeq": [2, "smart"],
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "handle-callback-err": [2],
+    "no-path-concat": [2],
+    "block-spacing": [2, "always"],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "comma-spacing": [2, {"before": false, "after": true}],
+    "consistent-this": [2, "self"],
+    "eol-last": [2],
+    "func-style": [2, "expression", { "allowArrowFunctions": true }],
+    "indent": [2, 2, {"SwitchCase": 1, "VariableDeclarator": { "var": 2, "let": 2, "const": 3}}],
+    "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
+    "new-cap": [2, {"capIsNew": false}],
+    "semi": [2, "always"],
+    "no-undef": [2]
+  }
+}

@@ -1,12 +1,12 @@
 var assert = require('assert'),
     TestStream = require('./testStream.js');
 
-var boroughTest = function(dataset, streamOptions, tsRecords, tsFunction, count) {
+var boroughTest = function(dataset, streamOptions, count) {
   var testData = {};
   before(function(done) {
     this.timeout(0);
     var stream = dataset.stream(streamOptions);
-    var testStream = new TestStream(tsRecords, tsFunction);
+    var testStream = new TestStream();
     testStream.on('finish', function() {
       testData = this.testData();
       done();
@@ -16,12 +16,9 @@ var boroughTest = function(dataset, streamOptions, tsRecords, tsFunction, count)
   it('Record count matches', function() {
     assert.equal(count, testData.count);
   });
-  it('Specified records exist', function() {
-    assert.equal(0, testData.recordsMissing.length);
-  });
 };
 
-module.exports.allTests = function(dataset, options, indexFunction, records, counts, allOnly, noInit) {
+module.exports.allTests = function(dataset, options, counts, allOnly, noInit) {
   if (typeof noInit === 'undefined' || !noInit) {
     before(function(done) {
       this.timeout(0);
@@ -36,31 +33,31 @@ module.exports.allTests = function(dataset, options, indexFunction, records, cou
         var opt = { boroughs: ['MN'] };
         for (var k in options)
           opt[k] = options[k];
-        boroughTest(dataset, opt, records.MN, indexFunction, counts.MN);
+        boroughTest(dataset, opt, counts.MN);
       });
       describe('Bronx', function() {
         var opt = { boroughs: ['BX'] };
         for (var k in options)
           opt[k] = options[k];
-        boroughTest(dataset, opt, records.BX, indexFunction, counts.BX);
+        boroughTest(dataset, opt, counts.BX);
       });
       describe('Brooklyn', function() {
         var opt = { boroughs: ['BK'] };
         for (var k in options)
           opt[k] = options[k];
-        boroughTest(dataset, opt, records.BK, indexFunction, counts.BK);
+        boroughTest(dataset, opt, counts.BK);
       });
       describe('Queens', function() {
         var opt = { boroughs: ['QN'] };
         for (var k in options)
           opt[k] = options[k];
-        boroughTest(dataset, opt, records.QN, indexFunction, counts.QN);
+        boroughTest(dataset, opt, counts.QN);
       });
       describe('Staten Island', function() {
         var opt = { boroughs: ['SI'] };
         for (var k in options)
           opt[k] = options[k];
-        boroughTest(dataset, opt, records.SI, indexFunction, counts.SI);
+        boroughTest(dataset, opt, counts.SI);
       });
     });
   } else {
@@ -68,13 +65,8 @@ module.exports.allTests = function(dataset, options, indexFunction, records, cou
       var opt = { };
       for (var k in options)
         opt[k] = options[k];
-      var allRecords = records.MN
-        .concat(records.BX)
-        .concat(records.BK)
-        .concat(records.QN)
-        .concat(records.SI);
       var totalCount = counts.Total;
-      boroughTest(dataset, opt, allRecords, indexFunction, totalCount);
+      boroughTest(dataset, opt, totalCount);
     });
   }
 };

@@ -2,42 +2,43 @@
 	"Pluto": {
 		"name": "PLUTO",
 		"tag": "pluto",
-		"version": "16v1",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_16v1.zip",
-		"hash": "9eead81b8ccd16b3f140ccabfb6eaf9945270340",
-		"accessedOn": "2016-11-01"
+		"version": "16v2",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_16v2%20.zip",
+		"hash": "ff1165a6ebb43793728dd604062e47aa55c84a57",
+		"accessedOn": "2017-02-12",
+		"filePath": "BORO_zip_files_csv/"
 	},
 	"MapPluto": {
 		"name": "MapPLUTO",
 		"tag": "mapPluto",
-		"version": "15v1",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_16v1.zip",
-		"hash": "3dd051afbfb5990a23e10d3d8c377116fa4be4f1",
-		"accessedOn": "2016-11-01",
+		"version": "16v2",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_16v2.zip",
+		"hash": "88ed5db89f99b52121b71afde06f474afdc9671d",
+		"accessedOn": "2017-02-12",
 		"files": {
-	    "MN": "Manhattan/MNMapPLUTO.shp",
-	    "BX": "Bronx/BXMapPLUTO.shp",
-	    "BK": "Brooklyn/BKMapPLUTO.shp",
-	    "QN": "Queens/QNMapPLUTO.shp",
-	    "SI": "Staten_Island/SIMapPLUTO.shp"
+	    "MN": "MNMapPLUTO.shp",
+	    "BX": "BXMapPLUTO.shp",
+	    "BK": "BKMapPLUTO.shp",
+	    "QN": "QNMapPLUTO.shp",
+	    "SI": "SIMapPLUTO.shp"
 	  }
 	},
 	"ZoningTaxLot": {
 		"name": "NYC Zoning Tax Lot Database",
 		"tag": "zoningTaxLot",
-		"version": "October 2016",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201610.zip",
-		"hash": "48f9d520203c304c99b50746af444bb9b93c0e19",
-		"accessedOn": "2016-11-01",
-		"file": "NY_ZoningTaxLotDB_201610.csv"
+		"version": "January 2017",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201701.zip",
+		"hash": "8408e17eb1d64d7f12d5002fda6f210dfeb113a6",
+		"accessedOn": "2017-02-12",
+		"file": "NY_ZoningTaxLotDB_201701.csv"
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
 		"tag": "pad",
-		"version": "16C",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16c.zip",
+		"version": "16D",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16d.zip",
 		"hash": "fb3969b6a4c41aacda75c40d44c6892acae47d40",
-		"accessedOn": "2016-11-01",
+		"accessedOn": "2017-02-12",
 		"files": {
 	    "BBL": "bobabbl.txt",
 	    "ADR": "bobaadr.txt"
