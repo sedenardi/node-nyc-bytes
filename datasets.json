@@ -6,7 +6,13 @@
 		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_16v2%20.zip",
 		"hash": "ff1165a6ebb43793728dd604062e47aa55c84a57",
 		"accessedOn": "2017-02-12",
-		"filePath": "BORO_zip_files_csv/"
+		"files": {
+			"BORO_zip_files_csv/MN.csv": "d3ab26d31d0a5fa13b156b4a847967a45ceb64a0",
+			"BORO_zip_files_csv/BX.csv": "47b94f116088a14818fb71c7c99ced7516bd2d53",
+			"BORO_zip_files_csv/BK.csv": "9206f3b188eff3a794a30599ab38d05bb07a066c",
+			"BORO_zip_files_csv/QN.csv": "9ecf06d693cb1e0468aebba8b2ba389a9efe9759",
+			"BORO_zip_files_csv/SI.csv": "4ff7c8e8a490bb7fc90012e14877ce6f06bdb9bf"
+		}
 	},
 	"MapPluto": {
 		"name": "MapPLUTO",
