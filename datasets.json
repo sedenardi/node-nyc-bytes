@@ -22,11 +22,11 @@
 		"hash": "88ed5db89f99b52121b71afde06f474afdc9671d",
 		"accessedOn": "2017-02-12",
 		"files": {
-	    "MN": "MNMapPLUTO.shp",
-	    "BX": "BXMapPLUTO.shp",
-	    "BK": "BKMapPLUTO.shp",
-	    "QN": "QNMapPLUTO.shp",
-	    "SI": "SIMapPLUTO.shp"
+	    "MNMapPLUTO.shp": "c09cc49a8a23b867664838b493c380c6e4cca17a",
+	    "BXMapPLUTO.shp": "9428f2ae9e1a512e19364ac2d4e983f910463f0a",
+	    "BKMapPLUTO.shp": "58daa1b604993101005ccfc91c0f670c92dfa43d",
+	    "QNMapPLUTO.shp": "02b30d3d82c30d9cae122becbe9a9d1f48f606f8",
+	    "SIMapPLUTO.shp": "15b8aafcac26b9ac4906bb52385bcdb20e5205e4"
 	  }
 	},
 	"ZoningTaxLot": {
