@@ -15,19 +15,18 @@ A node.js module for working with NYC's [BYTES of the BIG APPLE datasets](http:/
 
     npm install nyc-bytes
 
-Each dataset is exposed as a singleton object that must be initialized. This ensures that the underlying files are downloaded, extracted, and ready for use. Attach a `ready` listener to continue execution once the dataset has finished initializing.
+Each dataset is exposed as a singleton object that must be initialized. This ensures that the underlying files are downloaded, extracted, and ready for use. Initializing the dataset returns a `Promise` that returns once the dataset has finished initializing.
 
-    var Bytes = require('nyc-bytes');
+    const Bytes = require('nyc-bytes');
 
-    var dataset = Bytes.Pluto;
-    dataset.on('ready', function() {
+    const dataset = Bytes.Pluto;
+    dataset.init().then(() => {
       console.log('Dataset ready.');
-      //do something
+      const stream = dataset.stream();
+      // do something with stream
+    }).catch((err) => {
+      console.error(err);
     });
-    dataset.on('error', function(err) {
-      console.log('Error: ' + err.message);
-    });
-    dataset.init();
 
 #####Datasets
 * Pluto - `var dataset = Bytes.Pluto;`
@@ -37,31 +36,31 @@ Each dataset is exposed as a singleton object that must be initialized. This ens
 
 ##dataset.stream([options])
 
-The dataset's underlying data is accessable like any other standard node stream.
+The dataset's underlying data is accessible like any other standard node stream.
 
-    var stream = dataset.stream();
-    stream.on('readable', function() {
-      var record = stream.read();
+    const stream = dataset.stream();
+    stream.on('readable', () => {
+      const record = stream.read();
       // do something with the record
     });
-    stream.on('end', function() {
+    stream.on('end', () => {
       console.log('finished');
     });
 
 You can also use the stream in [flowing mode](http://nodejs.org/api/stream.html#stream_event_data) by attaching a `data` event listener.
 
-    var stream = dataset.stream();
-    stream.on('data', function(record) {
+    const stream = dataset.stream();
+    stream.on('data', (record) => {
       // do something with the record
     });
-    stream.on('end', function() {
+    stream.on('end', () => {
       console.log('finished');
     });
 
 Lastly, you can also pipe the stream like you would any other readable stream.
 
-    var stream = dataset.stream();
-    var writableStream = somehowGetWritableStream();
+    const stream = dataset.stream();
+    const writableStream = somehowGetWritableStream();
     stream.pipe(writableStream);
 
 ##options

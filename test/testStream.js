@@ -1,20 +1,19 @@
-var Writable = require('stream').Writable,
-    util = require('util');
+'use strict';
 
-var TestStream = function() {
-  Writable.call(this, {objectMode: true});
-  this.count = 0;
-};
+const Writable = require('stream').Writable;
 
-util.inherits(TestStream, Writable);
-
-TestStream.prototype._write = function(chunk, encoding, callback) {
-  this.count++;
-  callback();
-};
-
-TestStream.prototype.testData = function() {
-  return { count: this.count };
-};
+class TestStream extends Writable {
+  constructor(options) {
+    super(options);
+    this.count = 0;
+  }
+  _write(chunk, encoding, done) {
+    this.count++;
+    done();
+  }
+  testData() {
+    return { count: this.count };
+  }
+}
 
 module.exports = TestStream;

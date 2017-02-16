@@ -1,19 +1,25 @@
-var assert = require('assert'),
-    TestStream = require('./testStream.js');
+'use strict';
 
-var boroughTest = function(dataset, streamOptions, count) {
-  var testData = {};
+/* global before */
+/* global it */
+/* global describe */
+
+const assert = require('assert');
+const TestStream = require('./testStream.js');
+
+const boroughTest = function(dataset, streamOptions, count) {
+  let testData = {};
   before(function(done) {
     this.timeout(0);
-    var stream = dataset.stream(streamOptions);
-    var testStream = new TestStream();
+    const stream = dataset.stream(streamOptions);
+    const testStream = new TestStream({ objectMode: true });
     testStream.on('finish', function() {
       testData = this.testData();
       done();
     });
     stream.pipe(testStream);
   });
-  it('Record count matches', function() {
+  it('Record count matches', () => {
     assert.equal(count, testData.count);
   });
 };
@@ -22,48 +28,50 @@ module.exports.allTests = function(dataset, options, counts, allOnly, noInit) {
   if (typeof noInit === 'undefined' || !noInit) {
     before(function(done) {
       this.timeout(0);
-      dataset.on('ready', done);
-      dataset.on('error', done);
-      dataset.init();
+      dataset.init().then(() => {
+        done();
+      }).catch((err) => {
+        done(err);
+      });
     });
   }
   if (!allOnly) {
-    describe('Individual boroughs', function() {
-      describe('Manhattan', function() {
-        var opt = { boroughs: ['MN'] };
-        for (var k in options)
+    describe('Individual boroughs', () => {
+      describe('Manhattan', () => {
+        const opt = { boroughs: ['MN'] };
+        for (let k in options)
           opt[k] = options[k];
         boroughTest(dataset, opt, counts.MN);
       });
-      describe('Bronx', function() {
-        var opt = { boroughs: ['BX'] };
-        for (var k in options)
+      describe('Bronx', () => {
+        const opt = { boroughs: ['BX'] };
+        for (let k in options)
           opt[k] = options[k];
         boroughTest(dataset, opt, counts.BX);
       });
-      describe('Brooklyn', function() {
-        var opt = { boroughs: ['BK'] };
-        for (var k in options)
+      describe('Brooklyn', () => {
+        const opt = { boroughs: ['BK'] };
+        for (let k in options)
           opt[k] = options[k];
         boroughTest(dataset, opt, counts.BK);
       });
-      describe('Queens', function() {
-        var opt = { boroughs: ['QN'] };
-        for (var k in options)
+      describe('Queens', () => {
+        const opt = { boroughs: ['QN'] };
+        for (let k in options)
           opt[k] = options[k];
         boroughTest(dataset, opt, counts.QN);
       });
-      describe('Staten Island', function() {
-        var opt = { boroughs: ['SI'] };
-        for (var k in options)
+      describe('Staten Island', () => {
+        const opt = { boroughs: ['SI'] };
+        for (let k in options)
           opt[k] = options[k];
         boroughTest(dataset, opt, counts.SI);
       });
     });
   } else {
-    describe('All boroughs', function() {
-      var opt = { };
-      for (var k in options)
+    describe('All boroughs', () => {
+      const opt = { };
+      for (let k in options)
         opt[k] = options[k];
       var totalCount = counts.Total;
       boroughTest(dataset, opt, totalCount);
