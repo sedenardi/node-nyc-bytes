@@ -45,11 +45,11 @@
 		"tag": "pad",
 		"version": "16D",
 		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16d.zip",
-		"hash": "fb3969b6a4c41aacda75c40d44c6892acae47d40",
+		"hash": "08b377da6bb8a58a64ad2885e11591fa8b0c4102",
 		"accessedOn": "2017-02-12",
 		"files": {
-	    "BBL": "bobabbl.txt",
-	    "ADR": "bobaadr.txt"
+	    "bobabbl.txt": "2b93f88c4c6c85b40b2101da0ba233aea6beb142",
+	    "bobaadr.txt": "e1b77753943ba3a63ae4a0307bf235a758e1dc1d"
 	  }
 	}
 }
