@@ -36,7 +36,9 @@
 		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201701.zip",
 		"hash": "8408e17eb1d64d7f12d5002fda6f210dfeb113a6",
 		"accessedOn": "2017-02-12",
-		"file": "NY_ZoningTaxLotDB_201701.csv"
+		"files": {
+			"NY_ZoningTaxLotDB_201701.csv": "dc251d6b789f6710c422ba6ad40658d7c89b0b63"
+		}
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
