@@ -32,24 +32,24 @@
 	"ZoningTaxLot": {
 		"name": "NYC Zoning Tax Lot Database",
 		"tag": "zoningTaxLot",
-		"version": "January 2017",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201701.zip",
-		"hash": "8408e17eb1d64d7f12d5002fda6f210dfeb113a6",
-		"accessedOn": "2017-02-12",
+		"version": "July 2017",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201707.zip",
+		"hash": "1570173b524261b1710565656e13bfd0ecbb8779",
+		"accessedOn": "2017-08-10",
 		"files": {
-			"NY_ZoningTaxLotDB_201701.csv": "dc251d6b789f6710c422ba6ad40658d7c89b0b63"
+			"NY_ZoningTaxLotDB_201707.csv": "989b25a4656a4849adda60be614bcdf2bac4ba97"
 		}
 	},
 	"PAD": {
 		"name": "PAD (Property Address Directory)",
 		"tag": "pad",
-		"version": "16D",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad16d.zip",
-		"hash": "08b377da6bb8a58a64ad2885e11591fa8b0c4102",
-		"accessedOn": "2017-02-12",
+		"version": "17B",
+		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad17b.zip",
+		"hash": "ae5a7481d2f847724ec48729b8faf6f877434bd8",
+		"accessedOn": "2017-08-10",
 		"files": {
-	    "bobabbl.txt": "2b93f88c4c6c85b40b2101da0ba233aea6beb142",
-	    "bobaadr.txt": "e1b77753943ba3a63ae4a0307bf235a758e1dc1d"
+	    "bobabbl.txt": "e7f3dc7036a43f651866c5e626ac3ab43387b207",
+	    "bobaadr.txt": "13f99445e2f3629f05e6573f24eed48ee29ec221"
 	  }
 	}
 }
