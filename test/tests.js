@@ -1,5 +1,3 @@
-'use strict';
-
 /* global describe */
 
 const Bytes = require('../lib/bytes.js');

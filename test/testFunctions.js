@@ -1,5 +1,3 @@
-'use strict';
-
 /* global before */
 /* global it */
 /* global describe */
