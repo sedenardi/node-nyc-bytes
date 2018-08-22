@@ -3,23 +3,39 @@
     "name": "PLUTO",
     "tag": "pluto",
     "version": "18v1",
-    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v1.zip",
-    "hash": "ff1165a6ebb43793728dd604062e47aa55c84a57",
+    "urls": [{
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v1.zip",
+      "hash": "ef8e45df50d3ae8ea0c9d882b1ec3411f37765a8"
+    }],
     "accessedOn": "2018-08-22",
     "files": [
-      "BORO_zip_files_csv/MN.csv",
-      "BORO_zip_files_csv/BX.csv",
-      "BORO_zip_files_csv/BK.csv",
-      "BORO_zip_files_csv/QN.csv",
-      "BORO_zip_files_csv/SI.csv"
+      "PLUTO_for_WEB/MN_18v1.csv",
+      "PLUTO_for_WEB/BX_18v1.csv",
+      "PLUTO_for_WEB/BK_18v1.csv",
+      "PLUTO_for_WEB/QN_18v1.csv",
+      "PLUTO_for_WEB/SI_18v1.csv"
     ]
   },
   "MapPluto": {
     "name": "MapPLUTO",
     "tag": "mapPluto",
     "version": "16v2",
-    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_16v2.zip",
-    "hash": "88ed5db89f99b52121b71afde06f474afdc9671d",
+    "urls": [{
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/bx_mappluto_18v1.zip",
+      "hash": "beb575fa58df28ea229daf79c3cfdbf459ce67f9"
+    }, {
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/bk_mappluto_18v1.zip",
+      "hash": "2bf92a7b375feceae2e241ca5c6354b005ce8cc4"
+    }, {
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mn_mappluto_18v1.zip",
+      "hash": "624a6925b9c887b1448eb7a4f2aab293a8235296"
+    }, {
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/qn_mappluto_18v1.zip",
+      "hash": "10a8553fe2b23a1e1ff738b16f0a4baa64373d2d"
+    }, {
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/si_mappluto_18v1.zip",
+      "hash": "ac18b23bac040201449cf0e81808ebbd9dccb39b"
+    }],
     "accessedOn": "2017-02-12",
     "files": [
       "MNMapPLUTO.shp",
@@ -33,8 +49,12 @@
     "name": "NYC Zoning Tax Lot Database",
     "tag": "zoningTaxLot",
     "version": "June 2018",
-    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201806.zip",
-    "hash": "278bbe14423c822931a28d36d34b74ca72557a49",
+    "urls": [
+      {
+        "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201806.zip",
+        "hash": "278bbe14423c822931a28d36d34b74ca72557a49"
+      }
+    ],
     "accessedOn": "2018-08-22",
     "files": [
       "NY_ZoningTaxLotDB201806.csv"
@@ -44,8 +64,10 @@
     "name": "PAD (Property Address Directory)",
     "tag": "pad",
     "version": "18C",
-    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad18c.zip",
-    "hash": "ca55fac4808a5c00ff637237b9b1c397008647a5",
+    "urls": [{
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad18c.zip",
+      "hash": "ca55fac4808a5c00ff637237b9b1c397008647a5"
+    }],
     "accessedOn": "2018-08-22",
     "files": [
       "bobabbl.txt",
