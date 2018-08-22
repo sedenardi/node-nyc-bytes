@@ -17,14 +17,14 @@ const testFunctions = require('./testFunctions.js');
 
 describe('ZoningTaxLot', function(){
   var dataset = Bytes.ZoningTaxLot;
-  var counts = { MN: 42907, BX: 89739, BK: 276889, QN: 324257, SI: 124098 };
+  var counts = { MN: 42798, BX: 89713, BK: 276680, QN: 324297, SI: 124437 };
   testFunctions.allTests(dataset, { }, counts);
 });
 
 describe('PAD', function(){
   var dataset = Bytes.PAD;
-  var bblCounts = { Total: 881428 };
-  var adrCounts = { Total: 1303981 };
+  var bblCounts = { Total: 882259 };
+  var adrCounts = { Total: 1311907 };
   describe('BBL', function(){
     testFunctions.allTests(dataset, { table: 'BBL' }, bblCounts, true);
   });

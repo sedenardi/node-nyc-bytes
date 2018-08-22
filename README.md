@@ -11,59 +11,68 @@ A node.js module for working with NYC's [BYTES of the BIG APPLE datasets](http:/
 * NYC Zoning Tax Lot Database
 * PAD (Property Address Directory)
 
-#Usage
+### Usage
 
-    npm install nyc-bytes
+```js
+npm install nyc-bytes
+```
 
 Each dataset is exposed as a singleton object that must be initialized. This ensures that the underlying files are downloaded, extracted, and ready for use. Initializing the dataset returns a `Promise` that returns once the dataset has finished initializing.
+```js
+const Bytes = require('nyc-bytes');
 
-    const Bytes = require('nyc-bytes');
+const dataset = Bytes.Pluto;
+dataset.init().then(() => {
+  console.log('Dataset ready.');
+  const stream = dataset.stream();
+  // do something with stream
+}).catch((err) => {
+  console.error(err);
+});
+```
 
-    const dataset = Bytes.Pluto;
-    dataset.init().then(() => {
-      console.log('Dataset ready.');
-      const stream = dataset.stream();
-      // do something with stream
-    }).catch((err) => {
-      console.error(err);
-    });
-
-#####Datasets
+### Datasets
 * Pluto - `var dataset = Bytes.Pluto;`
 * MapPluto - `var dataset = Bytes.MapPluto;` (requires [ogr2ogr](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries))
 * NYC Zoning Tax Lot Database - `var dataset = Bytes.ZoningTaxLot;`
 * PAD (Property Address Directory) - `var dataset = Bytes.PAD;`
 
-##dataset.stream([options])
+### dataset.stream([options])
 
 The dataset's underlying data is accessible like any other standard node stream.
 
-    const stream = dataset.stream();
-    stream.on('readable', () => {
-      const record = stream.read();
-      // do something with the record
-    });
-    stream.on('end', () => {
-      console.log('finished');
-    });
+```js
+const stream = dataset.stream();
+stream.on('readable', () => {
+  const record = stream.read();
+  // do something with the record
+});
+stream.on('end', () => {
+  console.log('finished');
+});
+```
 
 You can also use the stream in [flowing mode](http://nodejs.org/api/stream.html#stream_event_data) by attaching a `data` event listener.
 
-    const stream = dataset.stream();
-    stream.on('data', (record) => {
-      // do something with the record
-    });
-    stream.on('end', () => {
-      console.log('finished');
-    });
+```js
+const stream = dataset.stream();
+stream.on('data', (record) => {
+  // do something with the record
+});
+stream.on('end', () => {
+  console.log('finished');
+});
+```
 
 Lastly, you can also pipe the stream like you would any other readable stream.
 
-    const stream = dataset.stream();
-    const writableStream = somehowGetWritableStream();
-    stream.pipe(writableStream);
+```js
+const stream = dataset.stream();
+const writableStream = somehowGetWritableStream();
+stream.pipe(writableStream);
+```
 
-##options
+### options
 
 * `boroughs` - default: `['MN','BX','BK','QN','SI']` - Array of boroughs to return in the stream.
 * `table` - default: `'BOTH'` - Which table (`'BBL'`|`'ADR'`) to return (**only applicable to PAD dataset**)
@@ -76,5 +85,5 @@ becomes
 "EAST 45 STREET"
 ```
 
-#Todo
+## Todo
 * Add datasets - open an issue to suggest a dataset you'd like to see.

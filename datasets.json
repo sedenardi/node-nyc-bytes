@@ -1,55 +1,55 @@
 {
-	"Pluto": {
-		"name": "PLUTO",
-		"tag": "pluto",
-		"version": "16v2",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_16v2%20.zip",
-		"hash": "ff1165a6ebb43793728dd604062e47aa55c84a57",
-		"accessedOn": "2017-02-12",
-		"files": {
-			"BORO_zip_files_csv/MN.csv": "d3ab26d31d0a5fa13b156b4a847967a45ceb64a0",
-			"BORO_zip_files_csv/BX.csv": "47b94f116088a14818fb71c7c99ced7516bd2d53",
-			"BORO_zip_files_csv/BK.csv": "9206f3b188eff3a794a30599ab38d05bb07a066c",
-			"BORO_zip_files_csv/QN.csv": "9ecf06d693cb1e0468aebba8b2ba389a9efe9759",
-			"BORO_zip_files_csv/SI.csv": "4ff7c8e8a490bb7fc90012e14877ce6f06bdb9bf"
-		}
-	},
-	"MapPluto": {
-		"name": "MapPLUTO",
-		"tag": "mapPluto",
-		"version": "16v2",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_16v2.zip",
-		"hash": "88ed5db89f99b52121b71afde06f474afdc9671d",
-		"accessedOn": "2017-02-12",
-		"files": {
-	    "MNMapPLUTO.shp": "c09cc49a8a23b867664838b493c380c6e4cca17a",
-	    "BXMapPLUTO.shp": "9428f2ae9e1a512e19364ac2d4e983f910463f0a",
-	    "BKMapPLUTO.shp": "58daa1b604993101005ccfc91c0f670c92dfa43d",
-	    "QNMapPLUTO.shp": "02b30d3d82c30d9cae122becbe9a9d1f48f606f8",
-	    "SIMapPLUTO.shp": "15b8aafcac26b9ac4906bb52385bcdb20e5205e4"
-	  }
-	},
-	"ZoningTaxLot": {
-		"name": "NYC Zoning Tax Lot Database",
-		"tag": "zoningTaxLot",
-		"version": "July 2017",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201707.zip",
-		"hash": "1570173b524261b1710565656e13bfd0ecbb8779",
-		"accessedOn": "2017-08-10",
-		"files": {
-			"NY_ZoningTaxLotDB_201707.csv": "989b25a4656a4849adda60be614bcdf2bac4ba97"
-		}
-	},
-	"PAD": {
-		"name": "PAD (Property Address Directory)",
-		"tag": "pad",
-		"version": "17B",
-		"url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad17b.zip",
-		"hash": "ae5a7481d2f847724ec48729b8faf6f877434bd8",
-		"accessedOn": "2017-08-10",
-		"files": {
-	    "bobabbl.txt": "e7f3dc7036a43f651866c5e626ac3ab43387b207",
-	    "bobaadr.txt": "13f99445e2f3629f05e6573f24eed48ee29ec221"
-	  }
-	}
+  "Pluto": {
+    "name": "PLUTO",
+    "tag": "pluto",
+    "version": "18v1",
+    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v1.zip",
+    "hash": "ff1165a6ebb43793728dd604062e47aa55c84a57",
+    "accessedOn": "2018-08-22",
+    "files": [
+      "BORO_zip_files_csv/MN.csv",
+      "BORO_zip_files_csv/BX.csv",
+      "BORO_zip_files_csv/BK.csv",
+      "BORO_zip_files_csv/QN.csv",
+      "BORO_zip_files_csv/SI.csv"
+    ]
+  },
+  "MapPluto": {
+    "name": "MapPLUTO",
+    "tag": "mapPluto",
+    "version": "16v2",
+    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_16v2.zip",
+    "hash": "88ed5db89f99b52121b71afde06f474afdc9671d",
+    "accessedOn": "2017-02-12",
+    "files": [
+      "MNMapPLUTO.shp",
+      "BXMapPLUTO.shp",
+      "BKMapPLUTO.shp",
+      "QNMapPLUTO.shp",
+      "SIMapPLUTO.shp"
+    ]
+  },
+  "ZoningTaxLot": {
+    "name": "NYC Zoning Tax Lot Database",
+    "tag": "zoningTaxLot",
+    "version": "June 2018",
+    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201806.zip",
+    "hash": "278bbe14423c822931a28d36d34b74ca72557a49",
+    "accessedOn": "2018-08-22",
+    "files": [
+      "NY_ZoningTaxLotDB201806.csv"
+    ]
+  },
+  "PAD": {
+    "name": "PAD (Property Address Directory)",
+    "tag": "pad",
+    "version": "18C",
+    "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad18c.zip",
+    "hash": "ca55fac4808a5c00ff637237b9b1c397008647a5",
+    "accessedOn": "2018-08-22",
+    "files": [
+      "bobabbl.txt",
+      "bobaadr.txt"
+    ]
+  }
 }

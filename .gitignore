@@ -2,3 +2,4 @@ node_modules
 files
 .DS_Store
 test.js
+package-lock.json

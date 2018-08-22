@@ -18,7 +18,7 @@ const boroughTest = function(dataset, streamOptions, count) {
     stream.pipe(testStream);
   });
   it('Record count matches', () => {
-    assert.equal(count, testData.count);
+    assert.equal(testData.count, count);
   });
 };
 
