@@ -7,7 +7,7 @@ A node.js module for working with NYC's [BYTES of the BIG APPLE datasets](http:/
 
 ### Currently Supported Datasets
 * PLUTO
-* MapPluto
+* MapPluto (requires [ogr2ogr](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries))
 * NYC Zoning Tax Lot Database
 * PAD (Property Address Directory)
 
@@ -22,6 +22,9 @@ Each dataset is exposed as a singleton object that must be initialized. This ens
 const Bytes = require('nyc-bytes');
 
 const dataset = Bytes.Pluto;
+// or const dataset = Bytes.MapPluto;
+// or const dataset = Bytes.ZoningTaxLot;
+// or const dataset = Bytes.PAD;
 dataset.init().then(() => {
   console.log('Dataset ready.');
   const stream = dataset.stream();
@@ -30,12 +33,6 @@ dataset.init().then(() => {
   console.error(err);
 });
 ```
-
-### Datasets
-* Pluto - `var dataset = Bytes.Pluto;`
-* MapPluto - `var dataset = Bytes.MapPluto;` (requires [ogr2ogr](http://trac.osgeo.org/gdal/wiki/DownloadingGdalBinaries))
-* NYC Zoning Tax Lot Database - `var dataset = Bytes.ZoningTaxLot;`
-* PAD (Property Address Directory) - `var dataset = Bytes.PAD;`
 
 ### dataset.stream([options])
 
