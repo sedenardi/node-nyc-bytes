@@ -12,7 +12,7 @@ const records = {
 };
 
 const objBBLFunction = function(record) {
-  return record.bbl || record.BBL;
+  return record.BBL;
 };
 
 const geoBBLFunction = function(record) {
