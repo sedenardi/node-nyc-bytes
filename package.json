@@ -22,20 +22,18 @@
     "test": "mocha"
   },
   "dependencies": {
-    "csv-parse": "^2.5.0",
-    "fs-extra": "^7.0.0",
+    "csv-parse": "^4.10.1",
     "glob": "^7.1.2",
-    "mkdirp": "^0.5.0",
-    "ogr2ogr": "^1.2.1",
+    "ogr2ogr": "^2.0.0",
     "request": "^2.88.0",
     "stream-concat": "^0.3.0",
-    "stream-dbf": "^0.2.2",
+    "stream-dbf": "^0.3.0",
     "yauzl": "^2.10.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.4.0",
-    "mocha": "^5.2.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "mocha": "^8.0.1"
   },
   "engines": {
     "node": ">=7.6.0"
