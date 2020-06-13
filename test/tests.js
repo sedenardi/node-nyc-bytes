@@ -12,7 +12,7 @@ const records = {
 };
 
 const objBBLFunction = function(record) {
-  return record.bbl;
+  return record.bbl || record.BBL;
 };
 
 const geoBBLFunction = function(record) {
@@ -27,20 +27,20 @@ describe('Pluto', () => {
 
 describe('MapPluto', () => {
   const dataset = Bytes.MapPluto;
-  const counts = { MN: 42556, BX: 89632, BK: 276715, QN: 324236, SI: 124397 };
-  testFunctions.allTests(dataset, { }, records, geoBBLFunction, counts);
+  const counts = { Total: 857172 };
+  testFunctions.allTests(dataset, { }, records, geoBBLFunction, counts, true);
 });
 
 describe('ZoningTaxLot', () => {
   const dataset = Bytes.ZoningTaxLot;
-  const counts = { MN: 42798, BX: 89713, BK: 276680, QN: 324297, SI: 124437 };
-  testFunctions.allTests(dataset, { }, records, objBBLFunction, counts);
+  const counts = { Total: 858407 };
+  testFunctions.allTests(dataset, { }, records, objBBLFunction, counts, true);
 });
 
 describe('PAD', () => {
   const dataset = Bytes.PAD;
-  const bblCounts = { Total: 882259 };
-  const adrCounts = { Total: 1311907 };
+  const bblCounts = { Total: 874320 };
+  const adrCounts = { Total: 1313708 };
   describe('BBL', () => {
     testFunctions.allTests(dataset, { table: 'BBL' }, records, objBBLFunction, bblCounts, true);
   });

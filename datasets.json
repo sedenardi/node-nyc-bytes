@@ -15,56 +15,40 @@
   "MapPluto": {
     "name": "MapPLUTO",
     "tag": "mapPluto",
-    "version": "16v2",
+    "version": "20v3",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/bx_mappluto_18v1.zip",
-      "hash": "beb575fa58df28ea229daf79c3cfdbf459ce67f9"
-    }, {
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/bk_mappluto_18v1.zip",
-      "hash": "2bf92a7b375feceae2e241ca5c6354b005ce8cc4"
-    }, {
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mn_mappluto_18v1.zip",
-      "hash": "624a6925b9c887b1448eb7a4f2aab293a8235296"
-    }, {
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/qn_mappluto_18v1.zip",
-      "hash": "10a8553fe2b23a1e1ff738b16f0a4baa64373d2d"
-    }, {
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/si_mappluto_18v1.zip",
-      "hash": "ac18b23bac040201449cf0e81808ebbd9dccb39b"
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_20v3_arc_shp.zip",
+      "hash": "be307b6a2898182ebfc739450a964ae0a478c8b6"
     }],
-    "accessedOn": "2017-02-12",
+    "accessedOn": "2020-06-12",
     "files": [
-      "MNMapPLUTO.shp",
-      "BXMapPLUTO.shp",
-      "BKMapPLUTO.shp",
-      "QNMapPLUTO.shp",
-      "SIMapPLUTO.shp"
+      "MapPLUTO.shp"
     ]
   },
   "ZoningTaxLot": {
     "name": "NYC Zoning Tax Lot Database",
     "tag": "zoningTaxLot",
-    "version": "June 2018",
+    "version": "March 2020",
     "urls": [
       {
-        "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201806.zip",
-        "hash": "278bbe14423c822931a28d36d34b74ca72557a49"
+        "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb_20200331.zip",
+        "hash": "f73c51a353514856b37bdf6df9d0606de9849731"
       }
     ],
-    "accessedOn": "2018-08-22",
+    "accessedOn": "2020-06-12",
     "files": [
-      "NY_ZoningTaxLotDB201806.csv"
+      "NY_ZoningTaxLotDB20200331.csv"
     ]
   },
   "PAD": {
     "name": "PAD (Property Address Directory)",
     "tag": "pad",
-    "version": "18C",
+    "version": "20A",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad18c.zip",
-      "hash": "ca55fac4808a5c00ff637237b9b1c397008647a5"
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad20a.zip",
+      "hash": "3e9fc5ffcdd4a5a17260f1747e32a86a93d7e853"
     }],
-    "accessedOn": "2018-08-22",
+    "accessedOn": "2020-06-12",
     "files": [
       "bobabbl.txt",
       "bobaadr.txt"

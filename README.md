@@ -71,7 +71,6 @@ stream.pipe(writableStream);
 
 ### options
 
-* `boroughs` - default: `['MN','BX','BK','QN','SI']` - Array of boroughs to return in the stream.
 * `table` - default: `'BOTH'` - Which table (`'BBL'`|`'ADR'`) to return (**only applicable to PAD dataset**)
 * `sanitize` - default: `true` - Removes extra whitespaces. (**only applicable to PAD dataset**) Ex.
 ```
