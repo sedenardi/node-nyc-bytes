@@ -75,13 +75,19 @@ module.exports.allTests = function(dataset, options, records, bblFunction, count
       for (let k in options)
         opt[k] = options[k];
       const allRecords = [
-        ...records.MN,
-        ...records.BX,
-        ...records.BK,
-        ...records.QN,
+        ...records.MN.slice(0, 5),
+        ...records.BX.slice(0, 5),
+        ...records.BK.slice(0, 5),
+        ...records.QN.slice(0, 5),
         ...records.SI
       ];
-      const totalCount = counts.Total;
+      const totalCount = counts.Total || (
+        counts.MN +
+        counts.BX +
+        counts.BK +
+        counts.QN +
+        counts.SI
+      );
       boroughTest(dataset, opt, allRecords, bblFunction, totalCount);
     });
   }

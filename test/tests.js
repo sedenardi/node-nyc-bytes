@@ -12,7 +12,7 @@ const records = {
 };
 
 const objBBLFunction = function(record) {
-  return record.BBL;
+  return record.bbl;
 };
 
 const geoBBLFunction = function(record) {
@@ -21,8 +21,8 @@ const geoBBLFunction = function(record) {
 
 describe('Pluto', () => {
   const dataset = Bytes.Pluto;
-  const counts = { MN: 42966, BX: 89854, BK: 277316, QN: 324583, SI: 124493 };
-  testFunctions.allTests(dataset, { }, records, objBBLFunction, counts);
+  const counts = { Total: 858979 };
+  testFunctions.allTests(dataset, { }, records, objBBLFunction, counts, true);
 });
 
 describe('MapPluto', () => {

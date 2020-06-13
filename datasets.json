@@ -2,18 +2,14 @@
   "Pluto": {
     "name": "PLUTO",
     "tag": "pluto",
-    "version": "18v1",
+    "version": "20v3",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v1.zip",
-      "hash": "ef8e45df50d3ae8ea0c9d882b1ec3411f37765a8"
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_20v3_csv.zip",
+      "hash": "3dec656c0efb067b669e1da38436807c80336816"
     }],
-    "accessedOn": "2018-08-22",
+    "accessedOn": "2020-06-12",
     "files": [
-      "PLUTO_for_WEB/MN_18v1.csv",
-      "PLUTO_for_WEB/BX_18v1.csv",
-      "PLUTO_for_WEB/BK_18v1.csv",
-      "PLUTO_for_WEB/QN_18v1.csv",
-      "PLUTO_for_WEB/SI_18v1.csv"
+      "pluto_20v3.csv"
     ]
   },
   "MapPluto": {
