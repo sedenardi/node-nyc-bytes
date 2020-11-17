@@ -11,6 +11,9 @@ A node.js module for working with NYC's [BYTES of the BIG APPLE datasets](https:
 * NYC Zoning Tax Lot Database
 * PAD (Property Address Directory)
 
+### Dependencies
+This library uses `7z` to unzip datasets. It must be installed and the command `7za` must be available in your environment's `PATH` for it to work.
+
 ### Usage
 
 ```js

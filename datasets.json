@@ -2,25 +2,25 @@
   "Pluto": {
     "name": "PLUTO",
     "tag": "pluto",
-    "version": "20v3",
+    "version": "20v6",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_20v3_csv.zip",
-      "hash": "3dec656c0efb067b669e1da38436807c80336816"
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_20v6_csv.zip",
+      "hash": "b837df8a2f17fff9892bc24225fc53236b30afe7"
     }],
-    "accessedOn": "2020-06-12",
+    "accessedOn": "2020-11-16",
     "files": [
-      "pluto_20v3.csv"
+      "pluto_20v6.csv"
     ]
   },
   "MapPluto": {
     "name": "MapPLUTO",
     "tag": "mapPluto",
-    "version": "20v3",
+    "version": "20v6",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_20v3_arc_shp.zip",
-      "hash": "be307b6a2898182ebfc739450a964ae0a478c8b6"
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_20v6_arc_shp.zip",
+      "hash": "cdb3791aeda3db2d276aa11101720a9c78b438d2"
     }],
-    "accessedOn": "2020-06-12",
+    "accessedOn": "2020-11-16",
     "files": [
       "MapPLUTO.shp"
     ]
@@ -28,27 +28,27 @@
   "ZoningTaxLot": {
     "name": "NYC Zoning Tax Lot Database",
     "tag": "zoningTaxLot",
-    "version": "March 2020",
+    "version": "Octover 2020",
     "urls": [
       {
-        "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb_20200331.zip",
-        "hash": "f73c51a353514856b37bdf6df9d0606de9849731"
+        "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb_202001031.zip",
+        "hash": "3aa306af7176607b02418f752b3b1e661a3a8c9d"
       }
     ],
-    "accessedOn": "2020-06-12",
+    "accessedOn": "2020-11-16",
     "files": [
-      "NY_ZoningTaxLotDB20200331.csv"
+      "NY_ZoningTaxLotDB20201031.csv"
     ]
   },
   "PAD": {
     "name": "PAD (Property Address Directory)",
     "tag": "pad",
-    "version": "20A",
+    "version": "20C",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad20a.zip",
-      "hash": "3e9fc5ffcdd4a5a17260f1747e32a86a93d7e853"
+      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad20c.zip",
+      "hash": "f3784fa618a9cdebf7aa05a469123fb33cf57327"
     }],
-    "accessedOn": "2020-06-12",
+    "accessedOn": "2020-11-16",
     "files": [
       "bobabbl.txt",
       "bobaadr.txt"

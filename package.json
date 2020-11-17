@@ -1,6 +1,6 @@
 {
   "name": "nyc-bytes",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A node.js module for working with NYC's BYTES of the BIG APPLE datasets.",
   "main": "lib/bytes.js",
   "repository": {
@@ -26,9 +26,7 @@
     "glob": "^7.1.2",
     "ogr2ogr": "^2.0.0",
     "request": "^2.88.0",
-    "stream-concat": "^0.3.0",
-    "stream-dbf": "^0.3.0",
-    "yauzl": "^2.10.0"
+    "stream-concat": "^0.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
