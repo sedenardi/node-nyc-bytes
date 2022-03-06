@@ -21,26 +21,26 @@ const geoBBLFunction = function(record) {
 
 describe('Pluto', () => {
   const dataset = Bytes.Pluto;
-  const counts = { Total: 858308 };
+  const counts = { Total: 859032 };
   testFunctions.allTests(dataset, { }, records, objBBLFunction, counts, true);
 });
 
 describe('MapPluto', () => {
   const dataset = Bytes.MapPluto;
-  const counts = { Total: 857195 };
+  const counts = { Total: 857198 };
   testFunctions.allTests(dataset, { }, records, geoBBLFunction, counts, true);
 });
 
 describe('ZoningTaxLot', () => {
   const dataset = Bytes.ZoningTaxLot;
-  const counts = { Total: 858455 };
+  const counts = { Total: 858371 };
   testFunctions.allTests(dataset, { }, records, objBBLFunction, counts, true);
 });
 
 describe('PAD', () => {
   const dataset = Bytes.PAD;
-  const bblCounts = { Total: 874370 };
-  const adrCounts = { Total: 1314572 };
+  const bblCounts = { Total: 874426 };
+  const adrCounts = { Total: 1315892 };
   describe('BBL', () => {
     testFunctions.allTests(dataset, { table: 'BBL' }, records, objBBLFunction, bblCounts, true);
   });
