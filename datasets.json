@@ -2,25 +2,25 @@
   "Pluto": {
     "name": "PLUTO",
     "tag": "pluto",
-    "version": "21v4",
+    "version": "25v2",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_21v4_csv.zip",
-      "hash": "5d83526cbc14e0b4aa5038199eb74f68958470b5"
+      "url": "https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/pluto/nyc_pluto_25v2_1_csv.zip",
+      "hash": "f247a8a435cdaae7c150f68e848af89813183c1a"
     }],
-    "accessedOn": "2022-03-06",
+    "accessedOn": "2025-10-04",
     "files": [
-      "pluto_21v4.csv"
+      "pluto_25v2_1.csv"
     ]
   },
   "MapPluto": {
     "name": "MapPLUTO",
     "tag": "mapPluto",
-    "version": "21v4",
+    "version": "25v2",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_21v4_shp.zip",
-      "hash": "7047253d6202db6ad30d677d2ee97dc8e3ff5dfd"
+      "url": "https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/mappluto/nyc_mappluto_25v2_1_shp.zip",
+      "hash": "300476a8d8816ed5d7b5f36ee92740e35f29f997"
     }],
-    "accessedOn": "2022-03-06",
+    "accessedOn": "2025-10-04",
     "files": [
       "MapPLUTO.shp"
     ]
@@ -28,27 +28,27 @@
   "ZoningTaxLot": {
     "name": "NYC Zoning Tax Lot Database",
     "tag": "zoningTaxLot",
-    "version": "January 2022",
+    "version": "August 2025",
     "urls": [
       {
-        "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb_20220131.zip",
-        "hash": "ac15d581f3d5a8f12eb2bd1e35ac12f7bb7504ba"
+        "url": "https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/zoning-tax-lot-database/nyczoningtaxlotdb_20250831.zip",
+        "hash": "8b9f69d9f317ba731e19c894112525b688cb33bc"
       }
     ],
-    "accessedOn": "2022-03-06",
+    "accessedOn": "2025-10-04",
     "files": [
-      "NY_ZoningTaxLotDB20220131.csv"
+      "NY_ZoningTaxLotDB20250831.csv"
     ]
   },
   "PAD": {
     "name": "PAD (Property Address Directory)",
     "tag": "pad",
-    "version": "22A",
+    "version": "25C",
     "urls": [{
-      "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad22a.zip",
-      "hash": "fda75473f1e1f34a35a028398b78e8051069dafa"
+      "url": "https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/pad/pad_25c.zip",
+      "hash": "eed91e4fb68c974a89aa9c272300abdc3bac96b1"
     }],
-    "accessedOn": "2022-03-06",
+    "accessedOn": "2025-10-04",
     "files": [
       "bobabbl.txt",
       "bobaadr.txt"

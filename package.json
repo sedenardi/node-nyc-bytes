@@ -1,6 +1,6 @@
 {
   "name": "nyc-bytes",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A node.js module for working with NYC's BYTES of the BIG APPLE datasets.",
   "main": "lib/bytes.js",
   "repository": {
